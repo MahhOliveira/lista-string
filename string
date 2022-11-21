@@ -1,0 +1,61 @@
+/* Elabore um algoritmo que receba o nome completo de um cliente e imprima a quantidade de caracteres digitados. */
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char nomeCompleto[30];
+
+    printf("Digite seu nome completo: ");
+  //  scanf("%s", &nomeCompleto);
+    fgets(nomeCompleto, 30, stdin);
+
+    printf("\nNome Completo: %s\nQuantidade de caracteres: %d", nomeCompleto, strlen(nomeCompleto) - 1);
+
+
+}
+ 
+ /* Elabora um algoritmo que valide o nome de um cor, ou seja, o usuÃ¡rio poderÃ¡ digitar apenas branco, 
+verde e amarelo. */
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char cor[7];
+
+    printf("Digite a cor: ");
+    scanf("%s", &cor);
+
+    if(strcmp(cor,"branco") == 0 || strcmp(cor, "amarelo") == 0 || strcmp(cor, "verde") == 0)
+        printf("Cor escolhida: %s", cor);
+    else
+        printf("Cor Invalida!");
+
+
+}
+
+
+/* Elabore um algoritmo que receba os dados: nome completo, e-mail e endereÃ§o de um usuÃ¡rio 
+e faÃ§a um backup de todos eles em novas variÃ¡vies. */
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char nomeComp[30], email[50], endereco[50];
+    char backNome[30], backEmail[50], backEndereco[50];
+
+    printf("Digite seu nome completo: ");
+    fgets(nomeComp, 30, stdin);
+    printf("Digite seu email: ");
+    scanf("%s", email);
+    fflush(stdin);
+    printf("Digite seu endereco: ");
+    fgets(endereco, 50, stdin);
+
+    strcpy(backNome, nomeComp);
+    strcpy(backEmail, email);
+    strcpy(backEndereco, endereco);
+
+    printf("\nSeu nome: %sSeu email: %s\nSeu endereco: %s", backNome, backEmail, backEndereco);
+
+
+}
