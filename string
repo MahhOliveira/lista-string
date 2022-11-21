@@ -1,4 +1,4 @@
-/* Elabore um algoritmo que receba o nome completo de um cliente e imprima a quantidade de caracteres digitados. */
+01 /* Elabore um algoritmo que receba o nome completo de um cliente e imprima a quantidade de caracteres digitados. */
 #include <stdio.h>
 #include <string.h>
 
@@ -14,7 +14,7 @@ int main(){
 
 }
  
- /* Elabora um algoritmo que valide o nome de um cor, ou seja, o usuÃ¡rio poderÃ¡ digitar apenas branco, 
+ 02/* Elabora um algoritmo que valide o nome de um cor, ou seja, o usuÃ¡rio poderÃ¡ digitar apenas branco, 
 verde e amarelo. */
 #include <stdio.h>
 #include <string.h>
@@ -34,7 +34,7 @@ int main(){
 }
 
 
-/* Elabore um algoritmo que receba os dados: nome completo, e-mail e endereÃ§o de um usuÃ¡rio 
+03 /* Elabore um algoritmo que receba os dados: nome completo, e-mail e endereÃ§o de um usuÃ¡rio 
 e faÃ§a um backup de todos eles em novas variÃ¡vies. */
 #include <stdio.h>
 #include <string.h>
