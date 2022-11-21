@@ -1,0 +1,49 @@
+04- /*Elabore um algoritmo que receba o primeiro nome, o(s) nome(s) do meio, e o ultimo nome do usuÃ¡rio.
+ Concatene os dados e imprima o valor final.*/
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char nome[50], nomeMeio[50], sobrenome[50];
+
+    printf("Nome: ");
+    scanf("%s", &nome);
+    fflush(stdin);
+    printf("Nome do meio: ");
+    scanf("%s", &nomeMeio);
+   // fgets(nomeMeio, 10, stdin);
+    printf("Sobrenome: ");
+    fgets(sobrenome, 10, stdin);
+
+    strcat(nome, nomeMeio);
+    strcat(nome, sobrenome);
+
+    printf("%s", nome);
+
+
+}
+
+05 -* O usuario informa seu nome, sobrenome e numero do cpf. A partir destes dados Ã© composta sua senha de acesso, formada pelo nome, primeira letra do sobrenome e os 3 primeiros nÃºmeros do cpf. Elabore um algoritmo que gere e imprima a senha. */
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+    char nome[10], sobrenome[10], cpf[14], senha[34];
+
+    printf("Digite seu nome: ");
+    scanf("%s", &nome);
+
+    printf("Digite seu sobrenome: ");
+    scanf("%s", &sobrenome);
+
+    printf("Digite seu CPF: ");
+    scanf("%s", &cpf);
+
+    strcpy(senha, nome);
+    strncat(senha, sobrenome, 1);
+    strncat(senha, cpf, 3);
+
+    printf("Sua senha foi definida como: %s", senha);
+
+
+}
